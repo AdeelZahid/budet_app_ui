@@ -52,10 +52,42 @@ class BarChart extends StatelessWidget {
         ),
         SizedBox(height: 30.0),
         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             Bar(
               label: 'Su',
               amountSpent: expenses[0],
+              mostExpensive: mostExpensive,
+            ),
+            Bar(
+              label: 'Mo',
+              amountSpent: expenses[1],
+              mostExpensive: mostExpensive,
+            ),
+            Bar(
+              label: 'Tu',
+              amountSpent: expenses[2],
+              mostExpensive: mostExpensive,
+            ),
+            Bar(
+              label: 'We',
+              amountSpent: expenses[3],
+              mostExpensive: mostExpensive,
+            ),
+            Bar(
+              label: 'Th',
+              amountSpent: expenses[4],
+              mostExpensive: mostExpensive,
+            ),
+            Bar(
+              label: 'Fr',
+              amountSpent: expenses[5],
+              mostExpensive: mostExpensive,
+            ),
+            Bar(
+              label: 'St',
+              amountSpent: expenses[6],
               mostExpensive: mostExpensive,
             ),
           ],
